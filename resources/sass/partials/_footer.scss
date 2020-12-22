@@ -4,48 +4,47 @@
     padding-bottom: $font * 15;
     color: $color-test-footer;
 
+    .lista {
+        list-style-type: none;
+    }
+
+    .lunghezza {
+        width: 33%;
+        font-size: $font * 2;
+    }
 
     .contenitore-indirizzi {
-        width: 33%;
+
         ul {
 
-            list-style-type: none;
-
             li {
-                font-size: $font * 2;
                 line-height: 1.3;
-
             }
         }
     }
 
     .contenitore-pastificio {
-        width: 33%;
+
         ul {
 
-            list-style-type: none;
-
             li {
-                font-size: $font * 2;
                 padding: $font - 5 0;
             }
         }
-        .title-prodotti {
-            padding-top: $font * 3;
+
+            .title-prodotti {
+                padding-top: $font * 3;
+            }
         }
-    }
 
     .contenitore-chef {
-        width: 33%;
-        ul {
 
-            list-style-type: none;
+            ul {
 
-            li {
-                font-size: $font * 2;
-                padding: $font - 5 0;
+                li {
+                    padding: $font - 5 0;
+                }
             }
-        }
     }
 
 }
