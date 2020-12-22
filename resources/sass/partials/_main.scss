@@ -1,0 +1,18 @@
+.contenitore-pasta {
+    padding: $font * 5 0 $font * 5 0;
+}
+
+
+.card-contenitore {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+        width: calc(100% / 3 - 6px);
+        margin-right: 6px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.contenitore {
+    max-width: 1500px;
+    margin: auto;
+}
+
+main {
+    background-image: url(/images/fondo-pag-speciali.jpg);
+}
+
+footer {
+    background-image: url(/images/footer-montagne-bottom.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: $font * 3;
+    color: $color-h1;
+    padding: $font * 2 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: $font * 3;
+    padding-bottom: $font * 2;
+}

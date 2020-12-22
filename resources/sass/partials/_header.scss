@@ -2,7 +2,7 @@ header {
     text-align: center;
 
     img {
-        margin: 50px 0 30px 0;
+        margin: $font * 5 0 $font * 3 0;
     }
 
     ul {
@@ -16,7 +16,7 @@ header {
                 text-decoration: none;
                 font-size: 25px;
                 color: $test-color;
-                padding: 20px;
+                padding: $font * 2;
 
                 &:hover {
                     background-color: $main-color;
