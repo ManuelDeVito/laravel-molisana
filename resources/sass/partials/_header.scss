@@ -18,7 +18,7 @@ header {
                 color: $test-color;
                 padding: $font * 2;
 
-                &:hover {
+                &:hover, &.active  {
                     background-color: $main-color;
                 }
 

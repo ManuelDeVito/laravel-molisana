@@ -13,12 +13,12 @@ body {
   margin: auto;
 }
 
-main {
-  background-image: url(/images/fondo-pag-speciali.jpg);
+#wrapper {
+  background-image: url("../images/fondo-pag-speciali.jpg");
 }
 
 footer {
-  background-image: url(/images/footer-montagne-bottom.jpg);
+  background-image: url("../images/footer-montagne-bottom.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -39,19 +39,15 @@ h2 {
 header {
   text-align: center;
 }
-
 header img {
   margin: 50px 0 30px 0;
 }
-
 header ul {
   list-style-type: none;
 }
-
 header ul li {
   display: inline-block;
 }
-
 header ul li a {
   display: inline-block;
   text-decoration: none;
@@ -59,8 +55,7 @@ header ul li a {
   color: #000000;
   padding: 20px;
 }
-
-header ul li a:hover {
+header ul li a:hover, header ul li a.active {
   background-color: #B3E5FC;
 }
 
@@ -68,49 +63,87 @@ header ul li a:hover {
   padding: 50px 0 50px 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 .card-contenitore {
   display: flex;
   flex-wrap: wrap;
 }
-
 .card-contenitore .card {
   width: calc(100% / 3 - 6px);
   margin-right: 6px;
+  position: relative;
+}
+.card-contenitore .card .overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-contenitore .card .overlay a {
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.card-contenitore .card:hover .overlay {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 23px;
 }
 
-.card-contenitore .card img {
-  max-width: 100%;
+.contenitore-titolo {
+  padding: 30px 0;
+  background-color: #B8DAE6;
+}
+.contenitore-titolo .titolo-prodotto {
+  text-align: center;
+  text-transform: none;
+  font-size: 35px;
+}
+
+.regola {
+  display: block;
+}
+
+.descrizione {
+  background-color: #B8DAE6;
+}
+.descrizione p {
+  font-size: 23px;
+  line-height: 1.5;
+  padding-bottom: 50px;
 }
 
 .contenitore-footer {
   display: flex;
   margin-top: 100px;
   padding-bottom: 150px;
-  color: #9ca7b6;
+  color: #9CA7B6;
 }
-
 .contenitore-footer .lista {
   list-style-type: none;
 }
-
 .contenitore-footer .lunghezza {
   width: 33%;
   font-size: 20px;
 }
-
 .contenitore-footer .contenitore-indirizzi ul li {
   line-height: 1.3;
 }
-
 .contenitore-footer .contenitore-pastificio ul li {
   padding: 5px 0;
 }
-
 .contenitore-footer .contenitore-pastificio .title-prodotti {
   padding-top: 30px;
 }
-
 .contenitore-footer .contenitore-chef ul li {
   padding: 5px 0;
 }
-

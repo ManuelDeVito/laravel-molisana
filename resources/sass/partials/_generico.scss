@@ -13,12 +13,12 @@ body {
     margin: auto;
 }
 
-main {
-    background-image: url(/images/fondo-pag-speciali.jpg);
+#wrapper {
+    background-image: url('../images/fondo-pag-speciali.jpg');
 }
 
 footer {
-    background-image: url(/images/footer-montagne-bottom.jpg);
+    background-image: url('../images/footer-montagne-bottom.jpg');
     background-repeat: no-repeat;
     background-position: bottom;
 }

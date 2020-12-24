@@ -5,17 +5,20 @@
     <div id="menu">
         <ul>
             <li>
-                <a href="{{ route('home') }}">
+                <a class="{{ Request::route()->getName() == 'home' ? 'active' : '' }}"
+                    href="{{ route('home') }}">
                     Home
                 </a>
             </li>
             <li>
-                <a href=" {{ route('prodotti')}}">
+                <a class="{{ Request::route()->getName() == 'pagina-prodotti' ? 'active' : '' }}"
+                    href=" {{ route('pagina-prodotti')}}">
                     Prodotti
                 </a>
             </li>
             <li>
-                <a href="{{ route('news')}}">
+                <a class="{{ Request::route()->getName() == 'news' ? 'active' : '' }}"
+                     href="{{ route('news')}}">
                     News
                 </a>
             </li>

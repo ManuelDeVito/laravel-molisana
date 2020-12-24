@@ -2,17 +2,73 @@
     padding: $font * 5 0 $font * 5 0;
 }
 
+img {
+    max-width: 100%;
+
+}
+
 
 .card-contenitore {
     display: flex;
     flex-wrap: wrap;
 
+
     .card {
         width: calc(100% / 3 - 6px);
         margin-right: 6px;
+        position: relative;
 
-        img {
-            max-width: 100%;
+        .overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+
+            a {
+                color: $test-color;
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+
+            }
         }
+
+        &:hover .overlay {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.6);
+            font-size: 23px;
+        }
+    }
+}
+
+.contenitore-titolo {
+    padding: $font * 3 0;
+    background-color: $color-img;
+
+    .titolo-prodotto {
+        text-align: center;
+        text-transform: none;
+        font-size: 35px;
+
+    }
+}
+
+.regola {
+    display: block;
+}
+
+.descrizione {
+    background-color: $color-img;
+
+    p {
+        font-size: 23px;
+        line-height: 1.5;
+        padding-bottom: $font * 5;
     }
 }

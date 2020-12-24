@@ -5,9 +5,11 @@
         <title>@yield('titolo')</title>
         <link rel="stylesheet" href="{{ asset('css/app.css')}}">
     </head>
-    @include('partials.header')
     <body>
-        @yield('contenuto')
+        @include('partials.header')
+        <main>
+            @yield('contenuto')
+        </main>
+        @include('partials.footer')
     </body>
-    @include('partials.footer')
 </html>
